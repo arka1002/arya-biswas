@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+            <span class="ml-3 text-xl">Test</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900 cursor-pointer hvr-underline-from-center" href="#about">About</a>
+            <a class="mr-5 hover:text-gray-900 cursor-pointer hvr-underline-from-center" href="#gallery">Gallery</a>
+            <a class="mr-5 hover:text-gray-900 cursor-pointer hvr-underline-from-center" href="#achievements">Achievements</a>
+            <a class="mr-5 hover:text-gray-900 cursor-pointer hvr-underline-from-center" href="#testimonials">Testimonials</a>
+          </nav>
+          <a href="#contact">
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contact Me
+            <i class="fa fa-send" style="font-size:15px"></i>
+          </button></a>
+        </div>
+      </header>
+      <hr>
+      <!-- hero section -->
+      <div class="hero-image">
+        <div class="hero-text">
+          <p class="hero-heading" id="hero"></p>
+          <p class="hero-para" data-anijs="if: mouseover, on: .hero-image, do: rubberBand animated">Hi! I am Arya Biswas</p>
+          <a href="#gallery">
+          <button class="hvr-bounce-to-right">Explore my works <i class="fa fa-angle-double-down hero-icon" style="font-size:24px"></i></button></a>
+        </div>
+      </div><hr>
+      <!-- About Section -->
+      <section class="text-gray-600 body-font" id="about">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900" data-anijs="if: scroll, on: window, do: swing animated, before: scrollReveal repeat">About Myself
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="mb-8 leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, tempora nostrum rem omnis minus animi quibusdam voluptatum consectetur est iusto similique nisi quasi, ut cumque commodi odit ipsum officiis aspernatur! Expedita impedit, quam illum inventore assumenda dolore veritatis aperiam nemo eum, quibusdam asperiores, quas ut. A earum ipsa laudantium modi dolores. Corrupti nemo ex blanditiis voluptatum mollitia doloribus vero, perspiciatis pariatur nesciunt quaerat similique magni. Iste perferendis nam deleniti quam.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-[#77AD78] border-0 py-2 px-6 focus:outline-none rounded text-lg hvr-shutter-out-horizontal">Check my Instagram <i class="fa fa-instagram" style="font-size:24px; padding-left: 5px; padding-top: 2px;"></i></button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal repeat">
+          </div>
+        </div>
+      </section><hr>
+      <!-- gallery -->
+      <section class="text-gray-600 body-font" id="gallery">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex w-full mb-20 flex-wrap">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">MY GALLERY</h1>
+            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+          </div>
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-1/2">  
+                
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" data-anijs="if: mouseover, do: pulse animated">
+                
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" data-anijs="if: mouseover, do: pulse animated">
+                
+              </div>
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360" data-anijs="if: mouseover, do: pulse animated">
+                
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361" data-anijs="if: mouseover, do: pulse animated">
+                
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302" data-anijs="if: mouseover, do: pulse animated">
+                
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303" data-anijs="if: mouseover, do: pulse animated">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><hr>
+      <!-- achievements -->
+      
+      <section class="text-gray-600 body-font" id="achievements">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center font-bold test-header">Achievements</h1>
+          <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500">
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8" data-anijs="if: scroll, on: window, do: slideInLeft animated, before: scrollReveal repeat">
+                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+                  <div class="w-12 h-1 bg-[#77AD78] rounded mt-2 mb-4"></div>
+                  <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left" data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal repeat">
+                <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+                <a class="text-[#77AD78] inline-flex items-center cursor-pointer">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><hr>
+      <!-- Testimonials -->
+      <section class="text-gray-600 body-font" id="testimonials">
+        <div class="container px-5 py-24 mx-auto">
+          <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center font-bold test-header">Testimonials</h1>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/2 w-full" data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal repeat">
+              <div class="h-full bg-gray-100 p-8 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                    <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/2 w-full" data-anijs="if: scroll, on: window, do: slideInLeft animated, before: scrollReveal repeat">
+              <div class="h-full bg-gray-100 p-8 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                    <span class="text-gray-500 text-sm">DESIGNER</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><hr>
+      <!-- contact us -->
+      <section class="text-gray-600 body-font relative" id="contact">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 font-bold test-header">Contact me</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#77AD78] focus:bg-white focus:ring-2 focus:ring-[#6F8F72] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#77AD78] focus:bg-white focus:ring-2 focus:ring-[#6F8F72] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                  <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-[#77AD78] focus:bg-white focus:ring-2 focus:ring-[#6F8F72] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-[#77AD78] border-0 py-2 px-8 focus:outline-none rounded text-lg hvr-shutter-out-vertical">Send</button>
+              </div>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a class="text-[#77AD78]">example@email.com</a>
+                <p class="leading-normal my-5">49 Smith St.
+                  <br>Saint Cloud, MN 56301
+                </p>
+                <span class="inline-flex">
+                  <a class="text-gray-500">
+                    <i class="fa fa-facebook-square conicons" style="font-size:24px"></i>
+                  </a>
+                  <a class="ml-4 text-gray-500">
+                    <i class="fa fa-linkedin-square conicons" style="font-size:24px"></i>
+                  </a>
+                  <a class="ml-4 text-gray-500">
+                    <i class="fa fa-twitter conicons" style="font-size:24px"></i>
+                  </a>
+                  <a class="ml-4 text-gray-500">
+                    <i class="fa fa-apple conicons" style="font-size:24px"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><hr>
+
+      <!-- back to top button-->
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" style="font-size:30px"></i></button>
+
+
+      <!-- footer -->
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            
+            <span class="ml-3 text-xl">Test</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Arka —
+            <a href="#" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+          </p>
+          
+        </div>
+      </footer>
+
+
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="code.js"></script>
+
+</body>
+</html>
